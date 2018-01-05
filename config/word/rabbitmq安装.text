@@ -1,7 +1,0 @@
-1. brew install rabbitmq;
-2. 进入到 /usr/local/Cellar/rabbitmq/3.6.6/sbin
-3. sudo ./rabbitmq-server(启动服务)
-4. 另起终端 sudo ./rabbitmq-plugins enable rabbitmq_management
-5. 修改默认账户guest密码: sudo ./rabbitmqctl change_password guest lindj
-6. 可视化管理界面: http://localhost:15672/
-
