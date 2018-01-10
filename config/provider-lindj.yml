@@ -1,4 +1,4 @@
 server:
   port: 9000
 url:
-  length: 50
+  length: 10
