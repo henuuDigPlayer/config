@@ -1,7 +1,9 @@
 mybatis:
   mapper-locations: mappers/*.xml
   type-aliases-package: com.lindj.model
-
+management:
+  security:
+     enabled: false
 
 spring:
   datasource:
@@ -14,3 +16,8 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5InnoDBDialect
     show-sql: true
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: root
+    password: lindj
