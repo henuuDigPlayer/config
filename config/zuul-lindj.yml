@@ -1,2 +1,2 @@
-application:
-    name: config-server
+server:
+  port: 9003
