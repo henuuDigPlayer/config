@@ -1,4 +1,4 @@
 server:
   port: 9002
 url:
-  value: baidu.com
+  value: www.baidu.com
