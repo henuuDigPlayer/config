@@ -22,3 +22,21 @@ spring:
         binder:
           brokers: 192.168.1.41:9092
           zk-nodes: 192.168.1.41:2181
+          auto-add-partitions: true
+          auto-create-topics: true
+          min-partition-count: 1
+        bindings:
+          output:
+            destination: event-demo
+            content-type: text/plain
+            producer:
+              partitionCount: 1
+          input:
+            destination: event-demo
+            content-type: text/plain
+            group: s1
+            consumer:
+              autoCommitOffset: false
+              concurrency: 1
+              partitioned: false
+            
