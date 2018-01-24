@@ -27,12 +27,12 @@ spring:
           min-partition-count: 1
         bindings:
           output:
-            destination: event-demo
+            destination: demo
             content-type: text/plain
             producer:
               partitionCount: 1
           input:
-            destination: event-demo
+            destination: demo
             content-type: text/plain
             group: s1
             consumer:
