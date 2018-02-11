@@ -2,3 +2,16 @@ server:
   port: 9002
 url:
   value: www.baidu.com
+  
+spring:
+  cloud:
+    stream:
+      kafka:
+        bindings:
+          input:
+            destination: demo
+            content-type: text/plain
+            group: s1
+            consumer:
+              concurrency: 1
+              partitioned: false
