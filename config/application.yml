@@ -25,17 +25,4 @@ spring:
           auto-add-partitions: true
           auto-create-topics: true
           min-partition-count: 1
-        bindings:
-          output:
-            destination: demo
-            content-type: text/plain
-            producer:
-              partitionCount: 1
-          input:
-            destination: demo
-            content-type: text/plain
-            group: s1
-            consumer:
-              concurrency: 1
-              partitioned: false
             
