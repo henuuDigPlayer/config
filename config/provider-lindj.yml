@@ -2,3 +2,13 @@ server:
   port: 9000
 url:
   length: 10
+spring:
+  cloud:
+    stream:
+      kafka:
+        bindings:
+          output:
+            destination: demo
+            content-type: text/plain
+            producer:
+              partitionCount: 1
