@@ -20,8 +20,8 @@ spring:
     stream:
       kafka:
         binder:
-          brokers: 192.168.1.41:9092
-          zk-nodes: 192.168.1.41:2181
+          brokers: 192.168.1.46:9092
+          zk-nodes: 192.168.1.46:2181
           auto-add-partitions: true
           auto-create-topics: true
           min-partition-count: 1
