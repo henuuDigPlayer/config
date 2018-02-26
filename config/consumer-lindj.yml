@@ -10,7 +10,6 @@ spring:
         bindings:
           input:
             destination: demo
-            content-type: text/plain
             group: s1
             consumer:
               concurrency: 1
