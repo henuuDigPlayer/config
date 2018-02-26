@@ -9,6 +9,5 @@ spring:
         bindings:
           output:
             destination: demo
-            content-type: text/plain
             producer:
               partitionCount: 1
