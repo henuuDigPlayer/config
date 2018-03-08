@@ -5,6 +5,8 @@ url:
 spring:
   cloud:
     stream:
+      instanceCount: 1
+      instanceIndex: 0
       kafka:
         binder:
           minPartitionCount: 1
