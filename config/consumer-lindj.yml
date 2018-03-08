@@ -2,20 +2,20 @@ server:
   port: 9002
 url:
   value: www.baidu.com
-spring:
-  cloud:
-    stream:
-      instanceCount: 2
-      instanceIndex: 1
-      kafka:
-        binder:
-          minPartitionCount: 1
-          autoCreateTopics: true
-          autoAddPartitions: true
-        bindings:
-          input:
-            destination: demo
-            group: s1
-            consumer:
-              concurrency: 1
-              partitioned: false
+#spring:
+ # cloud:
+  #  stream:
+   #   instanceCount: 2
+    #  instanceIndex: 1
+     # kafka:
+      #  binder:
+       #   minPartitionCount: 1
+        #  autoCreateTopics: true
+         # autoAddPartitions: true
+       # bindings:
+        #  input:
+         #   destination: demo
+          #  group: s1
+           # consumer:
+            #  concurrency: 1
+             # partitioned: false
