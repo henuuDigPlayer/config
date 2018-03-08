@@ -2,12 +2,7 @@ server:
   port: 9000
 url:
   length: 10
-spring:
-  rabbitmq:
-    host: 192.168.1.46
-    port: 5672
-    username: root
-    password: lindj
+
 # spring:
 #  cloud:
  #   stream:
