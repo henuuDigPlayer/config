@@ -3,18 +3,24 @@ server:
 url:
   length: 10
 spring:
-  cloud:
-    stream:
-      instanceCount: 1
-      instanceIndex: 0
-      kafka:
-        binder:
-          minPartitionCount: 1
-          autoCreateTopics: true
-          autoAddPartitions: true
-        bindings:
-          output:
-            destination: demo
-            content-type: text/plain
-            producer:
-              partitionCount: 1
+  rabbitmq:
+    host: 192.168.1.46
+    port: 5672
+    username: root
+    password: lindj
+# spring:
+#  cloud:
+ #   stream:
+ #     instanceCount: 1
+  #    instanceIndex: 0
+   #   kafka:
+    #    binder:
+     #     minPartitionCount: 1
+      #    autoCreateTopics: true
+       #   autoAddPartitions: true
+        #bindings:
+         # output:
+          #  destination: demo
+           # content-type: text/plain
+            #producer:
+             # partitionCount: 1
