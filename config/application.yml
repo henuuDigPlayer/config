@@ -4,7 +4,6 @@ mybatis:
 management:
   security:
      enabled: false
-
 spring:
   datasource:
     driverClassName: com.mysql.jdbc.Driver
@@ -16,10 +15,15 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5InnoDBDialect
     show-sql: true
-  cloud:
-    stream:
-      kafka:
-        binder:
-          brokers: 192.168.1.46:9092
-          zk-nodes: 192.168.1.46:2181
+  rabbitmq:
+    host: 192.168.1.46
+    port: 5672
+    username: root
+    password: lindj
+  #cloud:
+   # stream:
+    #  kafka:
+     #   binder:
+      #    brokers: 192.168.1.46:9092
+       #   zk-nodes: 192.168.1.46:2181
             
